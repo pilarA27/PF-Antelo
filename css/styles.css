@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+img{
+max-width: 100%;
+}
+
+a{
+    color: #f7e3e5;
+    font-weight: bolder;
+    text-decoration: none;
+ }
+
+ a:hover{
+    color: white;
+    text-decoration: underline;
+ }
+
+body{
+    background-color:#dbdddf;
+}
+
+h2{
+    color: #dbcdc9;
+    font-size: 30px;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    margin: 10px;
+    font-weight: bolder;
+    background-color: #836860;
+    font-size: 20px;
+}
+
+p{
+     font-size: 20px;
+     margin-left: 10px;
+     margin: 1px 10px
+}
+
+h4{
+    font-size: 15;
+}
+
+.index-body{
+    background: url(../img/index-background.jpg);
+    -webkit-background-size: cover ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-fluid{
+    background-color:#f5edf0
+}
+
+.carousel{
+    margin-top: 200px;
+    margin: auto;
+}
+
+.btn-enc{
+    background-color: #a8959e ;
+    color: #f5ecec;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 2px;
+}
+
+.btn-enc:hover{
+    background-color: #726269 ;
+    padding: 4px;
+}
+
+
+
+.carousel-item img{
+    margin: auto;
+    margin-top: 200px;
+    height: 600px;
+    max-width: 1300px;
+    align-items: center;
+}
+
+.d-block{
+    height: 600px;
+}
+
+.img-logo{
+height: 160px;
+}
+
+.banner{
+    margin-top: 190px;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    opacity: .9;
+}
+
+.navbar-toggler-icon{
+background: url('https://api.iconify.design/radix-icons/hamburger-menu.svg?color=%233d2c2e') no-repeat center center / contain;
+}
+
+.nav-link-active{
+color: #3d2c2e;
+text-decoration: none;
+font-weight: bold;
+}
+
+.contenedorPadre{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contenedor{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(136, 111, 104, .9);
+color: #e7dce0;
+margin-bottom: 10px;
+}
+
+.contenedor-reverso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 237, 240, .9);
+    color:#6d5a5c;
+    margin-bottom: 10px;
+    border-top: solid #dbcdc9 1px;
+}
+
+.contenedor-reverso img{
+width: 400px;
+}
+.contenedor-reverso h2{
+    color: #3d2c2e;
+    text-decoration: underline;
+}
+
+.button-form{
+    color: #3d2c2e;
+    background-color: #dbcdc9;
+    border-width: 1;
+    border-color: #bbb4b2;
+    margin: 15px;
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.button-form:hover{
+    background-color: #dac1ba;
+    padding: 2px;
+}
+
+.galeria{
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto1 foto2 foto2"
+    "foto1 foto1 foto2 foto2"
+    "foto3 foto3 foto4 foto4"
+    "foto3 foto3 foto4 foto4";
+    gap: 5px;
+}
+
+.uno, .dos, .tres, .cuatro{
+    max-width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uno{
+    background-image: url(../img/Galería/galer-uno.jpg);
+    grid-area: foto1;
+}
+
+.dos{
+    background-image: url(../img/Galería/galer-dos.jpg);
+    grid-area: foto2;
+}
+
+.tres{
+    background-image: url(../img/Galería/galer-tres.jpg);
+    grid-area: foto3;
+}
+
+.cuatro{
+    background-image: url(../img/Galería/galer-cuatro.jpg);
+    grid-area: foto4;
+
+}
+
+.accordion{
+    margin-bottom: 10px;
+}
+
+.accordion-item, .accordion-button{
+    background-color: #eedfe5;
+}
+
+.oferta-text{
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-bottom: 10px ;
+    background-color: #a29fa8;
+    border-radius: 20px;
+}
+
+.padrecards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.card-text{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.button-card{
+    color: #886f68;
+    background-color: #dbcdc9;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 60px;
+    
+}
+
+.button-ofert{
+position: absolute;
+background-color: #a29fa8;
+font-size: 18px;
+top: 15px;
+right: 0px;
+font-family: 'Monoton';
+font-weight: bolder;
+
+}
+
+.card-img-top{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.form-background{
+    background: url(../img/form-background.jpg);
+    -webkit-background-size: cover ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form .form-content .form-header .form-title{
+    font-weight: normal;
+    font-family: 'Monoton';
+    color: #ffffff;
+    padding: 14px 0px;
+    text-align: center;
+}
+
+.form .form-content{
+    background-color: rgba(66, 76, 85, .9);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 200px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+    color: #d1ccdc;
+    font-weight: bolder;
+}
+
+.form .form-content .form-label{
+    display: block;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.form .form-content .form-input, .form-textarea{
+    background-color:rgba(245, 237, 240, .5);
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom:7px solid #d1ccdc;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+    font-size: 15px;
+    color: #f5edf0;
+    font-family: Roboto;
+}
+
+.form .form-content .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+
+.form .form-content .btn-form{
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background-color: #d1ccdc;
+    font-size: 16px;
+    border: none;
+    color: #424c55;
+    padding: 15px 0px;
+}
+
+.form .form-content .btn-form:hover{
+    background-color: #aaa4b8;
+    color: #303a42;
+
+}
+
+footer{
+    max-width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    background-color: #a29fa8;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+.icono{
+      width:60px;
+      padding: 10px;
+}
+
+
+@media (max-width:1325px){
+    .carousel{
+        margin-top: 200px;
+        margin: auto;
+    }
+    
+    .carousel-item img{
+        margin: auto;
+        margin-top: 200px;
+        height: 450px;
+        max-width: 1100px;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width:1130px){
+    .carousel{
+        margin-top: 200px;
+        margin: auto;
+    }
+
+    .contenedor{
+        display: block;
+    }
+    
+    .carousel-item img{
+        margin: auto;
+        margin-top: 200px;
+        height: 400px;
+        max-width: 900px;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width:930px){
+    .carousel{
+        margin-top: 200px;
+        margin: auto;
+    }
+    
+    .carousel-item img{
+        margin: auto;
+        margin-top: 200px;
+        height: 350px;
+        max-width: 700px;
+        align-items: center;
+    }
+
+    .cont-img{
+        max-width: 300px;
+    }
+    
+}
+
+@media (max-width:550px){
+    .cont-img{
+        display: none;
+    }
+
+    .contenedor{
+        display: block;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-areas: 
+        "foto1 foto1"
+        "foto1 foto1"
+        "foto1 foto1"
+        "foto2 foto2"
+        "foto2 foto2"
+        "foto2 foto2"
+        "foto3 foto3"
+        "foto3 foto3"
+        "foto3 foto3"
+        "foto4 foto4"
+        "foto4 foto4"
+        "foto4 foto4";
+        gap: 5px;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        max-width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width:415px){
+    .carousel{
+        margin-top: 300px;
+        margin: auto;
+    }
+    
+    .carousel-item img{
+        margin: auto;
+        margin-top: 200px;
+        height: 250px;
+        max-width: 500px;
+        align-items: center;
+    }
+
+    .galeria{
+        display: grid;
+        grid-template-areas: 
+        "foto1 foto1"
+        "foto1 foto1"
+        "foto1 foto1"
+        "foto2 foto2"
+        "foto2 foto2"
+        "foto2 foto2"
+        "foto3 foto3"
+        "foto3 foto3"
+        "foto3 foto3"
+        "foto4 foto4"
+        "foto4 foto4"
+        "foto4 foto4";
+        gap: 5px;
+    }
+
+    .uno, .dos, .tres, .cuatro{
+        max-width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
