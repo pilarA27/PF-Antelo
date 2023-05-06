@@ -1,4 +1,4 @@
-<html>
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,11 +25,15 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <!-- AOS --> 
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- CEO -->
+        <meta name="description" content="Trendy Clothes es un sitio web online de ropa en el que puedes comprar las prendas que más te gusten ¿Ya viste nuestros descuentos?">
+        <meta name="keywords" content="homepage, ropa, compra, ofertas, secondhand, descuentos">
     </head>
-</html>
 
-<body class="index-body">
-    <header>
+    <body class="index-body">
+      <header>
         <nav class="navbar bg-body-tertiary fixed-top">
             <div class="container-fluid">
               <a class="navbar-brand" href="index.html"><img src="img/Logo extenso.png" alt="Logo Trendy Clothes" class="img-logo"></a>
@@ -67,200 +71,210 @@
           </nav>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
     </header>
-
-    <main>
-      <!-- Carrousel ofertas-->
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/carrousel1.png" class="d-block w-100" alt="...">
+      <main>
+        
+        <!-- Carrousel ofertas-->
+        <div id="carouselExampleCaptions" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-item">
-            <img src="img/carrousel2.png" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/carrousel3.png" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <!-- Containers -->
-      <div class="contenedorPadre">
-
-        <div class="contenedor">
-            <h2 class="cont-title">Sobre Nosotros</h2>
-            <p>Esta página web fue creada en marzo de 2023 con el fin de vender ropa en tendencia de una forma más sencilla y accesible, logrando así el objetivo de que cada uno de nuestros clientes sea capaz de comprar ropa en la comodidad de su casa.
-                Nuestro negocio “Trendy Clothes” posee una gran variedad de prendas, talles y estilos para que siempre puedas encontrar lo que te gusta.
-            </p>
-        </div>
-    
-        <div class=contenedor-reverso>
-                <img src="img/tienda física.jpg" alt="Perchas con ropa" class="cont-img" title="Perchas con ropa">
-                <p>Próximamente nuestra nueva tienda en físico con ropa second hand. ¿Que es second hand?La ropa second hand es aquella que ha pasado por otras manos antes de llegar a tu armario, adquirir artículos usados te permite tener una mejor relación precio-calidad, además de que evita que las prendas terminen en la basura, logrando así alargar su tiempo de vida!!</p>
-        </div>
-
-        <!-- mini galería -->
-
-        <div class="galeria">
-          <div class="uno" title="modelo posando ropa negra" alt="modelo posando ropa negra"></div>
-          <div class="dos" title="foto de vestido con flores" alt="foto de vestido con flores"></div>
-          <div class="tres" title="foto de buzo beige" alt="foto de buzo beige"></div>
-          <div class="cuatro" title="modelo posando ropa verde" alt="modelo posando ropa verde"></div>
-        </div>
-
-        <!-- Información -->
-
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-
-        <!-- item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              <p class="info-text"><img src="img/shield.svg" alt="" class="icono"> Seguridad de compra</p> 
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Tus compras están totalmente protegidas de robo de datos, además nos preocupamos del estado en el que te llega el producto, bajo cualquier problema comunicate con nosotros.
-              </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/carrousel1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrousel2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/carrousel3.png" class="d-block w-100" alt="...">
             </div>
           </div>
-
-        <!-- item 2 -->
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                <p class="info-text"><img src="img/truck.svg" alt="" class="icono"> Envíos</p> 
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Realizamos envíos dentro y fuera del país. Cuidamos tu compra durante el trayecto, garantizando la calidad del producto.
-              </div>
-            </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+  
+        <!-- Containers -->
+        <div class="contenedorPadre">
+  
+          <div class="contenedor" data-aos="fade-right">
+              <h2>Sobre Nosotros</h2>
+              <p>Esta página web fue creada en marzo de 2023 con el fin de vender ropa en tendencia de una forma más sencilla y accesible, logrando así el objetivo de que cada uno de nuestros clientes sea capaz de comprar ropa en la comodidad de su casa.
+                  Nuestro negocio “Trendy Clothes” posee una gran variedad de prendas, talles y estilos para que siempre puedas encontrar lo que te gusta.
+              </p>
           </div>
-
-          <!-- item 3 -->
-
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                <p class="info-text"><img src="img/credit-card.svg" alt="" class="icono"> Pagos</p>
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Puedes realizar tu pago via PayPal o con cualquier tarjeta VISA.
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        
-       <!-- Preguntas Frecuentes -->
-
-        <div class="contenedor">
-            <div class="contenedorTexto">
-                <h2>Preguntas Frecuentes</h2>
-                <h3>¿Cuánto demora el envío?</h3>
-                <p>El envío está estipulado para demorar hasta 3 días dentro del país, de lo contrario el tiempo límite es de hasta un mes.</p>
-                <h3>¿Que puedo hacer en caso de tener un problema con el envío?</h3>
-                <p>Bajo cualquier problema con el envío de su compra, se le recomienda comunicarse con nosotros dejando su mensaje en la sección <a href="pages/contacto.html" class="seccion">Contacto</a>.</p>
-                <h3>¿Puedo hacer una devolución de mi compra?</h3>
-                <p>Las devoluciones son aceptadas solo en compras realizadas dentro del país, de lo contrario no es una posibilidad por el momento realizar una devolución de tu compra.</p>
-                <h3>¿Como puedo hacer un seguimiento de mi pedido antes de recibirlo?</h3>
-                <p>Al momento de finalizar la compra, se le brinda un número de tracking con el que podrá saber el estado de su pedido</p>
-                <h3>¿Que puedo hacer si mi producto llega dañado o defectuoso?</h3>
-                <p>En caso de tener un problema con el producto recibido, lo recomendado es enviarnos un mensaje en la sección <a href="pages/contacto.html" class="seccion">Contacto</a></p>
-            </div>
-        </div>
-
-        <!-- Encuesta -->
-        
-        <div class="contenedor-reverso">
-            <form id="encuesta">
-                <h2>Encuesta de satisfacción</h2>
-                <div>
-                    <p>Califica el servicio brinado por Trendy Clothes:</p>
-
-                    
-                    <input type="radio" name="servicio"  id="mb" required >
-                    <label for="mb" class="btn-enc">Muy Bueno</label>
-        
-                    <input type="radio" name="servicio" id="buen">
-                    <label for="buen" class="btn-enc">Bueno</label>
-        
-                    <input type="radio" name="servicio" id="med">
-                    <label for="med" class="btn-enc">Medio</label>
-        
-                    <input type="radio" name="servicio" id="mal">
-                    <label for="mal" class="btn-enc">Malo</label>
-                </div>
-        
-                <div>
-                    <p>Tiempo de espera del producto comprado</p>
-                    
-                    <input type="radio" name="espera" id="mb1" required>
-                    <label for="mb1" class="btn-enc">Muy Bueno</label>
-        
-                    <input type="radio" name="espera" id="buen1">
-                    <label for="buen1" class="btn-enc">Bueno</label>
-        
-                    <input type="radio" name="espera" id="med1">
-                    <label for="med1" class="btn-enc">Medio</label>
-        
-                    <input type="radio" name="espera" id="mal1">
-                    <label for="mal1" class="btn-enc">Malo</label>
-                </div>
-        
-                <div>
-                    <p>¿El producto llegó como lo esperabas?</p>
-                    
-                    <input type="radio" name="prod" id="si" required>
-                    <label for="si" class="btn-enc">Sí</label>
-        
-                    <input type="radio" name="prod" id="no">
-                    <label for="no" class="btn-enc">No</label>
-                </div>
-        
-                <div>
-                    <label for="dias">¿Cuantos dias demoró el producto en llegar?</label>
-                    <input type="number" id="dias"required>
-                </div>
-        
-                <div>
-                    <input type="submit" value="Enviar" class="button-form">
-                    <input type="reset" value="Eliminar" class="button-form">
-                </div>
-            </form>
-        </div>
-    </div>
       
-    </main>
-
-    <footer>
-      <div class="padreRedes">
-          <a href="https://www.linkedin.com/in/pilar-antelo-32573a263/?original_referer=" target="_blank">
-              <img src="img/linkedin.svg" alt="linkedin" class="icono"></a>
-      
-          <a href="https://www.instagram.com/pilarantelook/?igshid=YmMyMTA2M2Y%3D" target="_blank">
-              <img src="img/instagram.svg" alt="Instagram" class="icono"></a>
+          <div data-aos="fade-left" class=contenedor-reverso>
+                  <p>Próximamente nuestra nueva tienda en físico con ropa second hand. ¿Que es second hand?La ropa second hand es aquella que ha pasado por otras manos antes de llegar a tu armario, adquirir artículos usados te permite tener una mejor relación precio-calidad, además de que evita que las prendas terminen en la basura, logrando así alargar su tiempo de vida!!</p>
+          </div>
+  
+          <!-- mini galería -->
+  
+          <div data-aos="zoom-in-up" class="galeria">
+            <img src="img/Galería/galer-uno.jpg" class="galeria-img" title="modelo posando ropa negra" alt="modelo posando ropa negra">
+            <img src="img/Galería/galer-dos.jpg" class="galeria-img" title="foto de vestido con flores" alt="foto de vestido con flores">
+            <img src="img/Galería/galer-tres.jpg" class="galeria-img" title="foto de buzo beige" alt="foto de buzo beige">
+            <img src="img/Galería/galer-cuatro.jpg" class="galeria-img" title="modelo posando ropa verde" alt="modelo posando ropa verde">
+          </div>
+  
+          <!-- Información -->
+  
+          <div data-aos="fade-up" class="accordion accordion-flush" id="accordionFlushExample">
+  
+          <!-- item 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                <p class="info-text"><img src="img/shield.svg" alt="" class="icono"> Seguridad de compra</p> 
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Tus compras están totalmente protegidas de robo de datos, además nos preocupamos del estado en el que te llega el producto, bajo cualquier problema comunicate con nosotros.
+                </div>
+              </div>
+            </div>
+  
+          <!-- item 2 -->
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  <p class="info-text"><img src="img/truck.svg" alt="" class="icono"> Envíos</p> 
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Realizamos envíos dentro y fuera del país. Cuidamos tu compra durante el trayecto, garantizando la calidad del producto.
+                </div>
+              </div>
+            </div>
+  
+            <!-- item 3 -->
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  <p class="info-text"><img src="img/credit-card.svg" alt="" class="icono"> Pagos</p>
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  Puedes realizar tu pago via PayPal o con cualquier tarjeta VISA.
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          
+         <!-- Preguntas Frecuentes -->
+  
+          <div data-aos="fade-up" class="contenedor">
+              <div class="contenedorTexto">
+                  <h2>Preguntas Frecuentes</h2>
+                  <h3>¿Cuánto demora el envío?</h3>
+                  <p>El envío está estipulado para demorar hasta 3 días dentro del país, de lo contrario el tiempo límite es de hasta un mes.</p>
+                  <h3>¿Que puedo hacer en caso de tener un problema con el envío?</h3>
+                  <p>Bajo cualquier problema con el envío de su compra, se le recomienda comunicarse con nosotros dejando su mensaje en la sección <a href="pages/contacto.html" class="seccion">Contacto</a>.</p>
+                  <h3>¿Puedo hacer una devolución de mi compra?</h3>
+                  <p>Las devoluciones son aceptadas solo en compras realizadas dentro del país, de lo contrario no es una posibilidad por el momento realizar una devolución de tu compra.</p>
+                  <h3>¿Como puedo hacer un seguimiento de mi pedido antes de recibirlo?</h3>
+                  <p>Al momento de finalizar la compra, se le brinda un número de tracking con el que podrá saber el estado de su pedido</p>
+                  <h3>¿Que puedo hacer si mi producto llega dañado o defectuoso?</h3>
+                  <p>En caso de tener un problema con el producto recibido, lo recomendado es enviarnos un mensaje en la sección <a href="pages/contacto.html" class="seccion">Contacto</a></p>
+              </div>
+          </div>
+  
+          <!-- Encuesta -->
+          
+          <div data-aos="fade-up" class="contenedor-reverso">
+              <form id="encuesta">
+                  <h2>Encuesta de satisfacción</h2>
+                  <div>
+                      <p>Califica el servicio brinado por Trendy Clothes:</p>
+  
+                      
+                      <input type="radio" name="servicio"  id="mb" required >
+                      <label for="mb" class="btn-enc">Muy Bueno</label>
+          
+                      <input type="radio" name="servicio" id="buen">
+                      <label for="buen" class="btn-enc">Bueno</label>
+          
+                      <input type="radio" name="servicio" id="med">
+                      <label for="med" class="btn-enc">Medio</label>
+          
+                      <input type="radio" name="servicio" id="mal">
+                      <label for="mal" class="btn-enc">Malo</label>
+                  </div>
+          
+                  <div>
+                      <p>Tiempo de espera del producto comprado</p>
+                      
+                      <input type="radio" name="espera" id="mb1" required>
+                      <label for="mb1" class="btn-enc">Muy Bueno</label>
+          
+                      <input type="radio" name="espera" id="buen1">
+                      <label for="buen1" class="btn-enc">Bueno</label>
+          
+                      <input type="radio" name="espera" id="med1">
+                      <label for="med1" class="btn-enc">Medio</label>
+          
+                      <input type="radio" name="espera" id="mal1">
+                      <label for="mal1" class="btn-enc">Malo</label>
+                  </div>
+          
+                  <div>
+                      <p>¿El producto llegó como lo esperabas?</p>
+                      
+                      <input type="radio" name="prod" id="si" required>
+                      <label for="si" class="btn-enc">Sí</label>
+          
+                      <input type="radio" name="prod" id="no">
+                      <label for="no" class="btn-enc">No</label>
+                  </div>
+          
+                  <div>
+                      <label for="dias">¿Cuantos dias demoró el producto en llegar?</label>
+                      <input type="number" id="dias"required>
+                  </div>
+          
+                  <div>
+                      <input type="submit" value="Enviar"  class="button-form">
+                      <input type="reset" value="Eliminar" class="button-form">
+                  </div>
+              </form>
+          </div>
       </div>
-      <h4>Email: pilarantelo.2705@gmail.com</h4>
-      <h4>Página sin fines de lucro &copy</h4>
+        
+      </main>
+  
+      <footer>
+        <div class="padreRedes">
+            <a href="https://www.linkedin.com/in/pilar-antelo-32573a263/?original_referer=" target="_blank">
+                <img src="img/linkedin.svg" alt="linkedin" class="icono"></a>
+        
+            <a href="https://www.instagram.com/pilarantelook/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+                <img src="img/instagram.svg" alt="Instagram" class="icono"></a>
+        </div>
+        <h4>Email: pilarantelo.2705@gmail.com</h4>
+        <h4>Página sin fines de lucro &copy</h4>
       </footer>
-</body>
+
+      <!-- AOS -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+      AOS.init();
+      </script>
+      
+  </body>
+</html>
+
+
+

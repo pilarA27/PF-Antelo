@@ -1,0 +1,83 @@
+.banner{
+    margin-top: $margin-XG;
+    margin-bottom: $margin-medio;
+}
+
+.oferta-text{
+    font-family: $fuente-oferta;
+    text-align: center;
+    margin-bottom: $margin-chico ;
+    background-color: #a29fa8;
+    border-radius: 20px;
+}
+
+.padrecards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    &:hover{
+        transform: scale(1.1) !important;
+    }
+
+}
+
+.card-text{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.button-card{
+    color: #886f68;
+    background-color: #dbcdc9;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 60px;
+    
+}
+
+.button-ofert{
+position: absolute;
+background-color: #a29fa8;
+font-size: 18px;
+top: 15px;
+right: 0px;
+font-family: $fuente-form;
+font-weight: bolder;
+
+}
+
+.card-img-top{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+
+@media (min-width: $celular){
+    .padrecards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (min-width: $tablet){
+    .padrecards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: $desktop){
+    .padrecards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

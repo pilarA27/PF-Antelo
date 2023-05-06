@@ -1,0 +1,241 @@
+.index-body{
+    background: url(../img/index-background.jpg);
+    -webkit-background-size: cover ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container-fluid{
+    background-color:$color-beige
+}
+
+.carousel{
+    margin-top: $margin-XG;
+    margin: auto;
+    height: 600px;
+    max-width: 1300px;
+}
+
+
+.btn-enc{
+    background-color: #a8959e ;
+    color: #f5ecec;
+    padding: 5px;
+    border-radius: 3px;
+    margin: 2px;
+
+    &:hover{
+        background-color: #726269 ;
+        transform: scale(1.1) !important;
+    }
+}
+
+.carousel-item img{
+    margin: auto;
+    margin-top: $margin-XG;
+    height: 600px;
+    max-width: 1300px;
+    align-items: center;
+}
+
+.d-block{
+    height: 600px;
+}
+
+.contenedorPadre{
+    margin-top: $margin-grande;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contenedor{
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(136, 111, 104, .9);
+color: #e7dce0;
+margin-bottom: 10px;
+}
+
+.contenedor h2{
+    font-family: $fuente-oferta;
+}
+
+.contenedor-reverso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 237, 240, .9);
+    color:#6d5a5c;
+    margin-bottom: 10px;
+    border-top: solid #dbcdc9 1px;
+}
+
+.contenedor-reverso h2{
+    font-family: $fuente-oferta;
+}
+
+.contenedor-reverso img{
+width: 400px;
+}
+.contenedor-reverso h2{
+    color: $color-marron-oscuro;
+    font-family: $fuente-oferta;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.galeria-img{
+    height: 500px; 
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+
+.accordion{
+    margin-bottom: 10px;
+}
+
+.accordion-item, .accordion-button{
+    background-color: #eedfe5;
+}
+
+.button-form{
+    color: $color-marron-oscuro;
+    background-color: #dbcdc9;
+    border-width: 1;
+    border-color: #bbb4b2;
+    margin: 15px;
+    padding: 3px;
+    border-radius: 4px;
+
+    &:hover{
+        background-color: #dac1ba;
+        transform: scale(1.1) !important;
+    }
+}
+
+@media (min-width: $celular){
+    .carousel{
+        margin-top: 500px;
+        margin: auto;
+    }
+    
+    .carousel-item img{
+        margin: auto;
+        margin-top: 200px;
+        height: 250px;
+        max-width: 480px;
+        align-items: center;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor-reverso{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .galeria-img{
+        display: grid;
+        height: 250px; 
+        width: 250px;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    body{
+        font-size: 15px;
+    }
+
+    
+}
+
+
+
+@media (min-width: $tablet){
+    
+    .carousel-item img{
+        margin: auto;
+        margin-top: 200px;
+        height: 350px;
+        max-width: 700px;
+        align-items: center;
+    }
+
+    .cont-img{
+        max-width: 300px;
+    }
+
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeria-img{
+        height: 350px; 
+        width: 350px;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+}
+
+@media (min-width: $desktop){
+    .carousel{
+        margin-top: 200px;
+        margin: auto;
+    }
+    
+    .carousel-item img{
+        margin: auto;
+        margin-top: 200px;
+        height: 350px;
+        max-width: 700px;
+        align-items: center;
+    }
+
+}
+
+    .galeria-img{
+        height: 500px; 
+        width: 500px;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+
+@media (min-width: $desktopXG){
+    .carousel{
+        margin-top: 200px;
+        margin: auto;
+    }
+
+    .galeria-img{
+        height: 550px; 
+        width: 550px;
+        margin: 0 auto;
+        display: block;
+        object-fit: cover;
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
