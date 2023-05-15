@@ -9,10 +9,10 @@
         <link rel="shortcut icon" href="img/Logo reducido.png">
         <link rel="stylesheet" href="css/styles.css">
         <!-- Fonts--> 
-        <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -72,39 +72,11 @@
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>   
     </header>
       <main>
-        
-        <!-- Carrousel ofertas-->
-        <div id="carouselExampleCaptions" class="carousel slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/carrousel1.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/carrousel2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/carrousel3.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
   
         <!-- Containers -->
         <div class="contenedorPadre">
   
-          <div class="contenedor" data-aos="fade-right">
+          <div class="contenedor first" data-aos="fade-right">
               <h2>Sobre Nosotros</h2>
               <p>Esta página web fue creada en marzo de 2023 con el fin de vender ropa en tendencia de una forma más sencilla y accesible, logrando así el objetivo de que cada uno de nuestros clientes sea capaz de comprar ropa en la comodidad de su casa.
                   Nuestro negocio “Trendy Clothes” posee una gran variedad de prendas, talles y estilos para que siempre puedas encontrar lo que te gusta.
@@ -132,7 +104,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <p class="info-text"><img src="img/shield.svg" alt="" class="icono"> Seguridad de compra</p> 
+                <p class="info-text"><img src="img/shield.svg" alt="imágen de escudo" class="icono"> Seguridad de compra</p> 
                 </button>
               </h2>
               <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -147,7 +119,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  <p class="info-text"><img src="img/truck.svg" alt="" class="icono"> Envíos</p> 
+                  <p class="info-text"><img src="img/truck.svg" alt="imágen de camión" class="icono"> Envíos</p> 
               </h2>
               <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                 <div class="accordion-body">
@@ -161,7 +133,7 @@
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  <p class="info-text"><img src="img/credit-card.svg" alt="" class="icono"> Pagos</p>
+                  <p class="info-text"><img src="img/credit-card.svg" alt="imágen de tarjeta de pago" class="icono"> Pagos</p>
                 </button>
               </h2>
               <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -194,60 +166,63 @@
   
           <!-- Encuesta -->
           
-          <div data-aos="fade-up" class="contenedor-reverso">
-              <form id="encuesta">
-                  <h2>Encuesta de satisfacción</h2>
+          <div data-aos="fade-up" class="encuesta">
+              <form class="enc-content">
+                <div class="enc-header">
+                  <h2 class="enc-title">Encuesta</h2>
+                </div>
                   <div>
                       <p>Califica el servicio brinado por Trendy Clothes:</p>
   
                       
-                      <input type="radio" name="servicio"  id="mb" required >
-                      <label for="mb" class="btn-enc">Muy Bueno</label>
+                      <input type="radio" name="servicio" class="enc-input" id="mb" required >
+                      <label for="mb" class="enc-label">Muy Bueno</label>
           
-                      <input type="radio" name="servicio" id="buen">
-                      <label for="buen" class="btn-enc">Bueno</label>
+                      <input type="radio" name="servicio" id="buen" class="enc-input">
+                      <label for="buen" class="enc-label">Bueno</label>
           
-                      <input type="radio" name="servicio" id="med">
-                      <label for="med" class="btn-enc">Medio</label>
+                      <input type="radio" name="servicio" id="med" class="enc-input">
+                      <label for="med" class="enc-label">Medio</label>
           
-                      <input type="radio" name="servicio" id="mal">
-                      <label for="mal" class="btn-enc">Malo</label>
+                      <input type="radio" name="servicio" id="mal" class="enc-input">
+                      <label for="mal" class="enc-label">Malo</label>
                   </div>
           
                   <div>
                       <p>Tiempo de espera del producto comprado</p>
                       
-                      <input type="radio" name="espera" id="mb1" required>
-                      <label for="mb1" class="btn-enc">Muy Bueno</label>
+                      <input type="radio" name="espera" id="mb1" required class="enc-input">
+                      <label for="mb1" class="enc-label">Muy Bueno</label>
           
-                      <input type="radio" name="espera" id="buen1">
-                      <label for="buen1" class="btn-enc">Bueno</label>
+                      <input type="radio" name="espera" id="buen1" class="enc-input">
+                      <label for="buen1" class="enc-label">Bueno</label>
           
-                      <input type="radio" name="espera" id="med1">
-                      <label for="med1" class="btn-enc">Medio</label>
+                      <input type="radio" name="espera" id="med1" class="enc-input">
+                      <label for="med1" class="enc-label">Medio</label>
           
-                      <input type="radio" name="espera" id="mal1">
-                      <label for="mal1" class="btn-enc">Malo</label>
+                      <input type="radio" name="espera" id="mal1" class="enc-input">
+                      <label for="mal1" class="enc-label">Malo</label>
                   </div>
           
                   <div>
                       <p>¿El producto llegó como lo esperabas?</p>
                       
-                      <input type="radio" name="prod" id="si" required>
-                      <label for="si" class="btn-enc">Sí</label>
+                      <input type="radio" name="prod" id="si" required class="enc-input">
+                      <label for="si" class="enc-label">Sí</label>
           
-                      <input type="radio" name="prod" id="no">
-                      <label for="no" class="btn-enc">No</label>
+                      <input type="radio" name="prod" id="no" class="enc-input">
+                      <label for="no" class="enc-label">No</label>
                   </div>
           
                   <div>
-                      <label for="dias">¿Cuantos dias demoró el producto en llegar?</label>
-                      <input type="number" id="dias"required>
+                    <p>¿Cuantos dias demoró el producto en llegar?</p>
+                    <label for="dias" enc-label></label>
+                    <input type="number" id="dias"required class="enc-input">
                   </div>
           
-                  <div>
-                      <input type="submit" value="Enviar"  class="button-form">
-                      <input type="reset" value="Eliminar" class="button-form">
+                  <div class="btns-form">
+                      <input type="submit" value="Enviar"  class="btn-enc">
+                      <input type="reset" value="Eliminar" class="btn-enc">
                   </div>
               </form>
           </div>
@@ -258,10 +233,10 @@
       <footer>
         <div class="padreRedes">
             <a href="https://www.linkedin.com/in/pilar-antelo-32573a263/?original_referer=" target="_blank">
-                <img src="img/linkedin.svg" alt="linkedin" class="icono"></a>
+                <img src="img/linkedin.svg" alt="Logo de Linkedin" class="icono"></a>
         
             <a href="https://www.instagram.com/pilarantelook/?igshid=YmMyMTA2M2Y%3D" target="_blank">
-                <img src="img/instagram.svg" alt="Instagram" class="icono"></a>
+                <img src="img/instagram.svg" alt="Logo de Instagram" class="icono"></a>
         </div>
         <h4>Email: pilarantelo.2705@gmail.com</h4>
         <h4>Página sin fines de lucro &copy</h4>

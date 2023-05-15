@@ -72,6 +72,10 @@ footer {
   padding: 10px;
 }
 
+header {
+  margin-bottom: 200px;
+}
+
 .img-logo {
   height: 160px;
 }
@@ -97,13 +101,6 @@ footer {
   background-color: #f5edf0;
 }
 
-.carousel {
-  margin-top: 200px;
-  margin: auto;
-  height: 600px;
-  max-width: 1300px;
-}
-
 .btn-enc {
   background-color: #a8959e;
   color: #f5ecec;
@@ -114,14 +111,6 @@ footer {
 .btn-enc:hover {
   background-color: #726269;
   transform: scale(1.1) !important;
-}
-
-.carousel-item img {
-  margin: auto;
-  margin-top: 200px;
-  height: 600px;
-  max-width: 1300px;
-  align-items: center;
 }
 
 .d-block {
@@ -142,6 +131,9 @@ footer {
   background-color: rgba(136, 111, 104, 0.9);
   color: #e7dce0;
   margin-bottom: 10px;
+}
+.contenedor .first {
+  margin-top: 400px;
 }
 
 .contenedor h2 {
@@ -193,32 +185,82 @@ footer {
   background-color: #eedfe5;
 }
 
-.button-form {
-  color: #3d2c2e;
-  background-color: #dbcdc9;
-  border-width: 1;
-  border-color: #bbb4b2;
-  margin: 15px;
-  padding: 3px;
-  border-radius: 4px;
+.encuesta .enc-content .enc-header .enc-title {
+  font-weight: normal;
+  font-family: "Monoton";
+  color: #886f68;
+  padding: 14px 0px;
+  text-align: center;
 }
-.button-form:hover {
-  background-color: #dac1ba;
-  transform: scale(1.1) !important;
+
+.encuesta .enc-content {
+  background-color: rgba(245, 237, 240, 0.9);
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+  color: #3d2c2e;
+  font-weight: bolder;
+}
+
+.encuesta .enc-content .enc-label {
+  display: block;
+  font-size: 15px;
+  font-family: Roboto;
+  position: relative;
+}
+
+.encuesta .enc-content .enc-input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+  padding: 12px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  border-radius: 2px;
+  font-size: 15px;
+  color: #3d2c2e;
+  font-family: Roboto;
+}
+
+.btns-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.encuesta .enc-content .btn-enc {
+  display: inline-block;
+  margin: 5px 10px;
+  width: 50%;
+  font-family: Roboto;
+  outline: none;
+  background-color: #3d2c2e;
+  font-size: 15px;
+  border: none;
+  color: #a8959e;
+  padding: 15px 0px;
+  align-items: center;
+}
+.encuesta .enc-content .btn-enc:hover {
+  background-color: #57494b;
+  color: #beb5b9;
+}
+
+input[type=radio] {
+  appearance: none;
+}
+
+input[type=radio]:checked + label {
+  color: #a8959e;
+  text-decoration: underline;
 }
 
 @media (min-width: 215px) {
-  .carousel {
-    margin-top: 500px;
-    margin: auto;
-  }
-  .carousel-item img {
-    margin: auto;
-    margin-top: 200px;
-    height: 250px;
-    max-width: 480px;
-    align-items: center;
-  }
   .contenedor {
     display: flex;
     flex-direction: column;
@@ -243,13 +285,6 @@ footer {
   }
 }
 @media (min-width: 768px) {
-  .carousel-item img {
-    margin: auto;
-    margin-top: 200px;
-    height: 350px;
-    max-width: 700px;
-    align-items: center;
-  }
   .cont-img {
     max-width: 300px;
   }
@@ -267,32 +302,16 @@ footer {
   }
 }
 @media (min-width: 992px) {
-  .carousel {
-    margin-top: 200px;
-    margin: auto;
-  }
-  .carousel-item img {
-    margin: auto;
-    margin-top: 200px;
-    height: 350px;
-    max-width: 700px;
-    align-items: center;
+  .galeria-img {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    grid-template-columns: repeat(2, 2fr);
   }
 }
-.galeria-img {
-  height: 500px;
-  width: 500px;
-  margin: 0 auto;
-  display: block;
-  object-fit: cover;
-  grid-template-columns: repeat(2, 2fr);
-}
-
 @media (min-width: 1200px) {
-  .carousel {
-    margin-top: 200px;
-    margin: auto;
-  }
   .galeria-img {
     height: 550px;
     width: 550px;
@@ -332,7 +351,7 @@ footer {
 
 .form .form-content .form-label {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   font-family: Roboto;
   position: relative;
 }
@@ -362,7 +381,7 @@ footer {
   font-family: Roboto;
   outline: none;
   background-color: #d1ccdc;
-  font-size: 16px;
+  font-size: 15px;
   border: none;
   color: #424c55;
   padding: 15px 0px;
@@ -373,7 +392,6 @@ footer {
 }
 
 .banner {
-  margin-top: 200px;
   margin-bottom: 20px;
 }
 

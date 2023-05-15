@@ -9,13 +9,6 @@
     background-color:$color-beige
 }
 
-.carousel{
-    margin-top: $margin-XG;
-    margin: auto;
-    height: 600px;
-    max-width: 1300px;
-}
-
 
 .btn-enc{
     background-color: #a8959e ;
@@ -28,14 +21,6 @@
         background-color: #726269 ;
         transform: scale(1.1) !important;
     }
-}
-
-.carousel-item img{
-    margin: auto;
-    margin-top: $margin-XG;
-    height: 600px;
-    max-width: 1300px;
-    align-items: center;
 }
 
 .d-block{
@@ -56,6 +41,10 @@ align-items: center;
 background-color: rgb(136, 111, 104, .9);
 color: #e7dce0;
 margin-bottom: 10px;
+
+.first{
+    margin-top: 400px;
+}
 }
 
 .contenedor h2{
@@ -108,35 +97,83 @@ width: 400px;
     background-color: #eedfe5;
 }
 
-.button-form{
+.encuesta .enc-content .enc-header .enc-title{
+    font-weight: normal;
+    font-family: $fuente-form;
+    color: $color-marron-claro;
+    padding:14px 0px;
+    text-align: center;
+}
+
+.encuesta .enc-content{
+    background-color: rgba(245, 237, 240, .9);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: $margin-chico;
+    margin-bottom: $margin-chico;
+    padding-bottom: 30px;
+    border-radius: 3px;
     color: $color-marron-oscuro;
-    background-color: #dbcdc9;
-    border-width: 1;
-    border-color: #bbb4b2;
-    margin: 15px;
-    padding: 3px;
-    border-radius: 4px;
+    font-weight: bolder;
+}
+
+.encuesta .enc-content .enc-label{
+    display: block;
+    font-size: $fuente-chica;
+    font-family: $fuente-form-content;
+    position: relative;
+}
+
+.encuesta .enc-content .enc-input{
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: $fuente-chica;
+    padding: 12px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border-radius: 2px;
+    font-size: $fuente-chica;
+    color: $color-marron-oscuro;
+    font-family: $fuente-form-content;
+}
+
+.btns-form{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.encuesta .enc-content .btn-enc{
+    display: inline-block;
+    margin:5px 10px;
+    width: 50%;
+    font-family: $fuente-form-content;
+    outline: none;
+    background-color: $color-marron-oscuro;
+    font-size: $fuente-chica;
+    border: none;
+    color: #a8959e;
+    padding: 15px 0px;
+    align-items: center;
 
     &:hover{
-        background-color: #dac1ba;
-        transform: scale(1.1) !important;
+        background-color: #57494b;
+        color:#beb5b9 ;
     }
 }
 
-@media (min-width: $celular){
-    .carousel{
-        margin-top: 500px;
-        margin: auto;
-    }
-    
-    .carousel-item img{
-        margin: auto;
-        margin-top: 200px;
-        height: 250px;
-        max-width: 480px;
-        align-items: center;
-    }
+input[type="radio"]{
+    appearance: none;
+}
 
+input[type="radio"]:checked + label{
+    color: #a8959e;
+    text-decoration: underline;
+}
+
+@media (min-width: $celular){
     .contenedor{
         display: flex;
         flex-direction: column;
@@ -162,22 +199,12 @@ width: 400px;
     body{
         font-size: 15px;
     }
-
-    
+  
 }
 
 
 
 @media (min-width: $tablet){
-    
-    .carousel-item img{
-        margin: auto;
-        margin-top: 200px;
-        height: 350px;
-        max-width: 700px;
-        align-items: center;
-    }
-
     .cont-img{
         max-width: 300px;
     }
@@ -199,21 +226,6 @@ width: 400px;
 }
 
 @media (min-width: $desktop){
-    .carousel{
-        margin-top: 200px;
-        margin: auto;
-    }
-    
-    .carousel-item img{
-        margin: auto;
-        margin-top: 200px;
-        height: 350px;
-        max-width: 700px;
-        align-items: center;
-    }
-
-}
-
     .galeria-img{
         height: 500px; 
         width: 500px;
@@ -222,14 +234,10 @@ width: 400px;
         object-fit: cover;
         grid-template-columns: repeat(2, 2fr);
     }
+}
 
 
 @media (min-width: $desktopXG){
-    .carousel{
-        margin-top: 200px;
-        margin: auto;
-    }
-
     .galeria-img{
         height: 550px; 
         width: 550px;
