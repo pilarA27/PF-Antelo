@@ -224,14 +224,18 @@ header {
   margin-top: 10px;
   border-radius: 2px;
   font-size: 15px;
-  color: #f5edf0;
+  color: #3d2c2e;
   font-family: Roboto;
 }
 
-.encuesta .enc-content .btn-enc {
+.btns-form {
   text-align: center;
+  margin-top: 20px;
+}
+
+.encuesta .enc-content .btn-enc {
   display: inline-block;
-  margin-right: 10px;
+  margin: 5px 10px;
   width: 50%;
   font-family: Roboto;
   outline: none;

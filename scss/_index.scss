@@ -136,14 +136,18 @@ width: 400px;
     margin-top: 10px;
     border-radius: 2px;
     font-size: $fuente-chica;
-    color: $color-beige;
+    color: $color-marron-oscuro;
     font-family: $fuente-form-content;
 }
 
-.encuesta .enc-content .btn-enc{
+.btns-form{
     text-align: center;
+    margin-top: 20px;
+}
+
+.encuesta .enc-content .btn-enc{
     display: inline-block;
-    margin-right: 10px;
+    margin:5px 10px;
     width: 50%;
     font-family: $fuente-form-content;
     outline: none;
