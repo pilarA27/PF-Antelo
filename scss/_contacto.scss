@@ -28,7 +28,7 @@
 
 .form .form-content .form-label{
     display: block;
-    font-size: 16px;
+    font-size: $fuente-chica;
     font-family: $fuente-form-content;
     position: relative;
 }
@@ -42,7 +42,7 @@
     padding: 12px;
     margin-bottom: 12px;
     border-radius: 2px;
-    font-size: 15px;
+    font-size: $fuente-chica;
     color: $color-beige;
     font-family: $fuente-form-content;
 }
@@ -58,7 +58,7 @@
     font-family: $fuente-form-content;
     outline: none;
     background-color: #d1ccdc;
-    font-size: 16px;
+    font-size: $fuente-chica;
     border: none;
     color: #424c55;
     padding: 15px 0px;
